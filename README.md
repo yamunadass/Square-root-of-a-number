@@ -18,13 +18,24 @@ To write a program to find the square root of a number.
 ```
 /*
 Program to find the square root for the given number(newton's method) using function.
-Developed by: 
-RegisterNumber:  
+Developed by: Yamuna M
+RegisterNumber: 23005405
 */
+def gcd():
+    num1=int(input())
+    num2=int(input())
+    if num1<num2:
+        smaller=num1
+    else:
+        smaller=num2
+    for i in range(1,smaller+1):
+        if num1%i==0 and num2%i==0:
+            gcdvalue=i
+    print("GCD of two numbers is: {}".format(gcdvalue))
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
+![output](./Squarerootofanumber.png)
 
 
 ## Result:
